@@ -14,8 +14,12 @@ session_start();
 <body>
 <nav>
     <ul>
-        <a href="index.php">
+        <a href="./index.php">
             <li>Főoldal</li>
+        </a>
+
+        <a href="./mnb_soap.php">
+            <li>MNB SOAP</li>
         </a>
 
         <!-- Ha nincs session elindítva akkor belépés és regisztráció gomb látszik -->
