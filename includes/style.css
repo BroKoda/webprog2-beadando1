@@ -1,4 +1,107 @@
+/* ----- ----- ----- ----- COLORS ----- ----- ----- -----  */
+/*
+    RED: #ff3626
+    GREEN: #699a74
+    BLACK: #161616
+    WHITE: #ffffff
+*/
+
 body {
-    background: #eeeeee;
-    color: black;
+    background: #161616;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4{
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff3626;
+}
+
+a:hover {
+    color: white;
+}
+
+.red-text{
+    color: #ff3626;
+}
+.white-text{
+    color: #ffffff;
+}
+.green-text{
+    color: #699a74;
+}
+
+.black-shadow {
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1)
+}
+
+.main-row {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ----- ----- ----- ----- NAVIGATION ----- ----- ----- -----  */
+.navbar{
+    background: transparent;
+    padding: 20px 0;
+    /*border-bottom: 1px solid #699a74;*/
+}
+
+.navbar .logged-in-user {
+    position: relative;
+    text-align: center;
+    min-width: 100px;
+}
+
+.navbar .logged-in-user .title {
+    font-size: 10px;
+    color: white;
+    display: block;
+}
+
+.navbar .logged-in-user .username {
+    font-weight: 500;
+    color: white;
+    display: block;
+}
+
+.navbar .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .nav-item a {
+    color: #ff3626;
+}
+
+.navbar .nav-item a:hover {
+    color: white;
+}
+
+.navbar .nav-item-login,
+.navbar .nav-item-logout,
+.navbar .nav-item-registration {
+    background: #ff3626;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.navbar .nav-item-login a,
+.navbar .nav-item-logout a,
+.navbar .nav-item-registration a {
+    color: white;
+}
+
+/* ----- ----- ----- ----- INDEX PAGE ----- ----- ----- -----  */
+.welcome-box-container {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #638CA6;
 }
