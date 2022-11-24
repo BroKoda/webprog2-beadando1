@@ -18,6 +18,10 @@ session_start();
             <li>Főoldal</li>
         </a>
 
+        <a href="szineszek.php">
+            <li>Színészek</li>
+        </a>
+
         <!-- Ha nincs session elindítva akkor belépés és regisztráció gomb látszik -->
         <?php if (!isset($_SESSION['userId'])) : ?>
             <a href="./registration.php">
