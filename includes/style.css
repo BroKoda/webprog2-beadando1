@@ -1,13 +1,15 @@
 /* ----- ----- ----- ----- COLORS ----- ----- ----- -----  */
 /*
-    RED: #ff3626
-    GREEN: #699a74
-    BLACK: #161616
-    WHITE: #ffffff
+    DARKER BG: #edc7b7
+    LIGHTER BG: #eee2dc
+    GREY: #bab2b5
+    BLUE: #123c69
+    RED: #ac3b61
 */
 
 body {
-    background: #161616;
+    background: rgb(237,199,183);
+    background: linear-gradient(45deg, rgba(237,199,183,1) 0%, rgba(238,226,220,1) 100%);
     font-weight: 200;
 }
 
@@ -21,21 +23,21 @@ p {
 
 a {
     text-decoration: none;
-    color: #ff3626;
+    color: #ac3b61;
 }
 
 a:hover {
-    color: white;
+    color: #bab2b5;
 }
 
 .red-text{
-    color: #ff3626;
+    color: #ac3b61;
 }
-.white-text{
+.gray-text{
     color: #ffffff;
 }
-.green-text{
-    color: #699a74;
+.blue-text{
+    color: #123c69;
 }
 
 .black-shadow {
@@ -62,13 +64,13 @@ a:hover {
 
 .navbar .logged-in-user .title {
     font-size: 10px;
-    color: white;
+    color: #123c69;
     display: block;
 }
 
 .navbar .logged-in-user .username {
     font-weight: 500;
-    color: white;
+    color: #123c69;
     display: block;
 }
 
@@ -77,17 +79,17 @@ a:hover {
 }
 
 .navbar .nav-item a {
-    color: #ff3626;
+    color: #ac3b61;
 }
 
 .navbar .nav-item a:hover {
-    color: white;
+    color: #bab2b5;
 }
 
 .navbar .nav-item-login,
 .navbar .nav-item-logout,
 .navbar .nav-item-registration {
-    background: #ff3626;
+    background: #ac3b61;
     border-radius: 5px;
     margin-right: 0;
     margin-left: 10px;

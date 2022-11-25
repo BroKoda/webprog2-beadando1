@@ -1,5 +1,5 @@
             <div class="col-12 align-self-end text-center py-4">
-                <p class="green-text">&copy; Webprogramozáz beadandó - Czakó Ákos, Kávai Konrád <?php echo date("Y"); ?>.</p>
+                <p class="blue-text">&copy; Webprogramozáz beadandó - Czakó Ákos, Kávai Konrád <?php echo date("Y"); ?>.</p>
             </div>
         </div>
     </div>
