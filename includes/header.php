@@ -48,8 +48,14 @@ session_start();
                                     <li class="nav-item">
                                         <a class="nav-link" href="szineszek.php">Színészek</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="./mnb_soap.php">MNB árfolyam</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            MNB árfolyam
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="./mnb-soap-currencies.php">Aktuális</a></li>
+                                            <li><a class="dropdown-item" href="./mnb-soap-day.php">30 napos</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -72,19 +78,6 @@ session_start();
                                 </ul>
                             </div>
                         </div>
-
-
-<!--                            <li class="nav-item dropdown">-->
-<!--                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                                    Dropdown-->
-<!--                                </a>-->
-<!--                                <ul class="dropdown-menu">-->
-<!--                                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                                    <li><hr class="dropdown-divider"></li>-->
-<!--                                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                                </ul>-->
-<!--                            </li>-->
                     </div>
                 </div>
             </nav>
