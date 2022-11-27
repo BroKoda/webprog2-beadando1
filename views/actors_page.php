@@ -14,7 +14,7 @@ include_once './helpers/session_helper.php';
                     <div class="row" id="actors">
                         <div class="col-2 mt-3 mb-1">
                             <p>
-                                <strong>Választási év</strong>
+                                <strong>Kitíntetés éve</strong>
                             </p>
                         </div>
                         <div class="col-3 mt-3 mb-1">
@@ -22,7 +22,12 @@ include_once './helpers/session_helper.php';
                                 <strong>Színész</strong>
                             </p>
                         </div>
-                        <div class="col-7 mt-3 mb-1">
+                        <div class="col-2 mt-3 mb-1">
+                            <p>
+                                <strong>Nemzet színésze</strong>
+                            </p>
+                        </div>
+                        <div class="col-5 mt-3 mb-1">
                             <p>
                                 <strong>Díj</strong>
                             </p>
