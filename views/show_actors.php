@@ -6,14 +6,14 @@ class show_actors
         $this->model = $model;
     }
     public function output() {
-//        return "<h3>" . $this->model->actors . "</h3>";
-        return<<<HTML
-            <h3>{$this->model->actors}</h3>                
+        return
+
+<<<HTML
             <script>
                 let actorsJS = {$this->model->data};
-                console.log(actorsJS)
             </script>         
 HTML;
+
     }
 }
 ?>

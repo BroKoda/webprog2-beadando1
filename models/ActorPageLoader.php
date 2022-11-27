@@ -22,7 +22,10 @@ class ActorPageLoader
 
             $pdo = new PDO('mysql:host=localhost;dbname=webprog_czako_kavai', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $pdo->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
-            $query = "SELECT * FROM `kapott` LEFT JOIN `szinesz` ON kapott.szineszid = szinesz.id LEFT JOIN `elismeres` ON kapott.elismeresid = elismeres.id;";
+            $query = "SELECT * FROM kapott 
+                        LEFT JOIN szinesz ON kapott.szineszid = szinesz.id 
+                        LEFT JOIN elismeres ON kapott.elismeresid = elismeres.id 
+                        ORDER BY kapott.ev;";
             $sth = $pdo->prepare($query);
             $sth->execute();
             $result = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -49,9 +52,9 @@ class ActorPageLoader
     public function __destruct()
     {
         $view = new $this->viewName($this);
-        $szoveg = $view->output();
+        $actors = $view->output();
         $pageTitle = 'A nemzet színészei';
-        include('views/view_template.php');
+        include('views/actors_page.php');
     }
 }
 
