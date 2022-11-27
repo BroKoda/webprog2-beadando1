@@ -41,7 +41,7 @@ a:hover {
 }
 
 .black-shadow {
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1)
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1);
 }
 
 .main-row {
@@ -84,6 +84,34 @@ a:hover {
 
 .navbar .nav-item a:hover {
     color: #bab2b5;
+}
+
+.navbar .nav-item.dropdown {
+    position: relative;
+}
+
+.navbar .nav-item .dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.1)
+}
+
+.navbar .nav-item .dropdown-menu:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    font-weight: 200;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: white;
 }
 
 .navbar .nav-item-login,
