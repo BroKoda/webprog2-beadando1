@@ -5,7 +5,7 @@ class Database
     private $host = 'localhost';
     private $user = 'root';
     private $pass = '';
-    private $dbname = 'webprog_czako_kavai';
+    private $dbname = 'webprog_czako_kavai_1';
 
     // PHP Data Object létrehozás
     private $dbh;

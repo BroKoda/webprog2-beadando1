@@ -1,16 +1,16 @@
-<?php
-$currencyArray = null;
-try {
-    $startDate = date("Y-m-d", strtotime('-30 days'));
-    $endDate = date("Y-m-d");
-    $currencyNames = "EUR,USD";
-    $client = new SoapClient("https://www.mnb.hu/arfolyamok.asmx?singleWsdl");
-    $currencyArray = (array)simplexml_load_string(
-        $client->GetExchangeRates(array('startDate' => $startDate, 'endDate' => $endDate, 'currencyNames' => $currencyNames))->GetExchangeRatesResult);
-} catch (SoapFault $e) {
-    var_dump($e);
-}
-?>
+    <?php
+        $currencyArray = null;
+        try {
+            $startDate = date("Y-m-d", strtotime('-30 days'));
+            $endDate = date("Y-m-d");
+            $currencyNames = "EUR,USD";
+            $client = new SoapClient("https://www.mnb.hu/arfolyamok.asmx?singleWsdl");
+            $currencyArray = (array)simplexml_load_string(
+                $client->GetExchangeRates(array('startDate' => $startDate, 'endDate' => $endDate, 'currencyNames' => $currencyNames))->GetExchangeRatesResult);
+        } catch (SoapFault $e) {
+            var_dump($e);
+        }
+    ?>
 
 <?php
 include_once 'includes/header.php';

@@ -20,7 +20,7 @@ class ActorPageLoader
 
         try {
 
-            $pdo = new PDO('mysql:host=localhost;dbname=webprog_czako_kavai', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+            $pdo = new PDO('mysql:host=localhost;dbname=webprog_czako_kavai_1', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $pdo->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
             $query = "SELECT * FROM kapott 
                         LEFT JOIN szinesz ON kapott.szineszid = szinesz.id 
